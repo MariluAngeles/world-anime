@@ -1,0 +1,207 @@
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos dentro del contenedor */
+}
+
+.logo img {
+    margin-right: 10px; /* Espacio entre el logo y el nombre de la página */
+}
+h1{
+	color: #6a0dad; /* Color de texto morado */
+	font-family: cursiva;
+	font-size:40px 
+}
+h2, h3 {
+    color: #6a0dad; /* Color de texto morado */
+	font-family: cursiva;
+	font-size:30px 
+
+}
+button{
+	    color: #6a0dad; /* Color de texto morado */
+	font-family: cursiva;
+}
+.menu-container {
+    background-color: purple; /* Color de fondo del menú */
+    padding: 10px;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	list-style: none; /* Agregar esta línea para quitar los marcadores de lista */
+}
+
+.menu-container ul li {
+    display: inline;
+    margin-right: 20px;
+	list-style: none; /* Agregar esta línea para quitar los marcadores de lista */
+}
+
+.menu-container ul li a {
+    color: #ffffff; /* Color de texto blanco */
+    text-decoration: none;
+    padding: 10px;
+	list-style: none; /* Agregar esta línea para quitar los marcadores de lista */
+}
+
+.menu-container ul li a:hover {
+    background-color: #6a0dad; /* Color de fondo al pasar el mouse */
+	list-style: none; /* Agregar esta línea para quitar los marcadores de lista */
+}
+
+/* Estilos específicos para la navegación en el header */
+
+.header-nav {
+    text-align: center;
+}
+
+/* Estilos para hacer la página receptiva */
+
+@media screen and (max-width: 768px) {
+    .menu-container ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+footer p{
+	  background-color: purple; /* Color de fondo del menú */
+    padding: 10px;
+}
+/* Estilos personalizados para el carrusel */
+.carousel-inner {
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Color de fondo del carrusel */
+}
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px; /* Ancho máximo del carrusel */
+            margin: 0 auto; /* Centrar el carrusel horizontalmente */
+        }
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+		.carousel {
+    display: flex;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Asegura que cada elemento se ajuste al contenedor al desplazarse */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Establece un tamaño fijo para cada elemento */
+    scroll-snap-align: start; /* Alinea los elementos al inicio del contenedor */
+    margin-right: 10px; /* Espacio entre los elementos */
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
+}
+.anime-recommendations {
+    padding: 20px;
+    background-color: white;
+}
+
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.anime-item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.anime-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.anime-item p {
+    font-size: 14px;
+    color: #555555;
+}
+p{
+	font-family:cursiva;
+	padding: 10px 10px;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+	border-style:dashed;
+	border-width:5;
+	border-color:#6a1b9a;
+    margin: 10px 0;
+    background-color: #fff; /* Fondo blanco */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: left;
+}
+
+th {
+    background-color: #6a1b9a; /* Fondo morado oscuro para encabezados */
+    color: #fff; /* Texto blanco */
+}
+
+tr:nth-child(even) {
+    background-color: #f3e5f5; /* Fondo morado claro para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+
+tr:hover {
+    background-color: #8e24aa; /* Fondo morado medio para hover */
+    color: #fff; /* Texto blanco al hacer hover */
+}
+.products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
